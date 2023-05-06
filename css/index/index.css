@@ -1,0 +1,126 @@
+:root {
+    --color-primary: #2C3E50;
+    --color-secondary: #19B5FE;
+    --color-accent: #26C281;
+    --color-highlight: #e18c0b;
+    --color-danger: #F64747;
+    --color-white: #fff;
+    --color-gray: #ddd;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    background-image: url("../../assets/image/fondo_login.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.contLogin {
+    align-items: center;
+    background: var(--color-white);
+    box-shadow: rgba(255, 255, 255, 1.35) 0px 5px 15px;
+    border-radius: 6px;
+    height: 500px;
+    padding: 16px;
+    text-align: center;
+    width: 460px;
+}
+
+.contLogin h1 {
+    color: var(--color-primary);
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+.group_input {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.group_input input {
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 28px;
+}
+
+.group_input input:focus {
+    outline: none;
+    border: 2px solid var(--color-highlight);
+}
+
+.group_input label {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.group_input .btn_ingresar {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    margin: 40px auto;
+    transition: all .5s;
+    width: 200px;
+}
+
+.group_input .btn_ingresar:hover{
+    background: var(--color-highlight);
+}
+
+.group_input .links {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    padding: 4px;
+    text-decoration: none;
+    text-align: right;
+}
+
+/**=====================Media Queryes========================**/
+
+@media screen and (max-width: 768px) {
+    .contLogin{
+        height: 480px;
+        width: 400px;
+    }
+
+    .contLogin h1 {
+        font-size: 1.5rem;
+        margin: 20px auto;
+    }
+
+    .group_input input {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contLogin{
+        height: 420px;
+        width: 280px;
+    }
+
+    .contLogin h1 {
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
+
+    .group_input .btn_ingresar {
+       
+        margin: 12px auto;
+    }
+}
