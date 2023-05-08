@@ -7,63 +7,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu</title>
 
-    <link rel="stylesheet" href="../css/nav/nav.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<link rel="stylesheet" href="../css/nav/nav.css">
+<link rel="stylesheet" href="../css/crear_usuario/crear_usuario.css">
 </head>
 
 <body>
-    <div class="menu-collapsed" id="sidemenu">
-
-        <!--Header-->
-        <div id="header">
-            <div id="title"><span>NoteBoost</span></div>
-            <div id="menu-btn">
-                <div class="btn-hamburger"></div>
-                <div class="btn-hamburger"></div>
-                <div class="btn-hamburger"></div>
-            </div>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">NoteBoost</span>
         </div>
-
-        <!--Profile-->
-        <div id="profile">
-            <div id="photo">
-                <img src="../assets/image/usuario.png" alt="foto">
-            </div>
-            <div id="name"><span>Johan p</span></div>
-        </div>
-
-        <!--Items-->
-        <div id="menu-items">
-            <div class="item">
+        <ul class="nav-links">
+            <li>
                 <a href="#">
-                    <div class="icon"><img src="../assets/icons/estudiante.svg" alt=""></div>
-                    <div class="title"><span>Ingresar Estudiantes</span></div>
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Menú</span>
                 </a>
-            </div>
-
-            <div class="item separator">
-            </div>
-
-            <div class="item">
-                <a href="#">
-                    <div class="icon"><img src="../assets/icons/estudiante.svg" alt=""></div>
-                    <div class="title"><span>Ingresar Estudiantes</span></div>
-                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Menú</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="../assets/icons/estudiante.svg" alt=""></i>
+                        <span class="link_name">Estudiantes</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Estudiantes</a></li>
+                    <li><a href="#">Crear Estudiantes</a></li>
+                    <li><a href="#">Lista Estudiantes</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="../assets/icons/materias.svg" alt="imagen para metarrias"></i>
+                        <span class="link_name">Materias</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Materias</a></li>
+                    <li><a href="#">Imgresar Materias</a></li>
+                    <li><a href="#">Lista de Materias</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="../assets/icons/grupos.svg" alt="Imagen de grupos"></i>
+                        <span class="link_name">Grupos</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Grupos</a></li>
+                    <li><a href="#">Crear Grupos</a></li>
+                    <li><a href="#">Lista Grupos</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="../assets/icons/conceptos.svg" alt="Imagen para conceptos"></i>
+                        <span class="link_name">Conceptos</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Conceptos</a></li>
+                    <li><a href="#">Crear Conceptos</a></li>
+                    <li><a href="#">Lista Conceptos</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="../assets/icons/usuarios.svg" alt="Imagen para notas"></i>
+                        <span class="link_name">Usuarios</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Usuarios</a></li>
+                    <li><a href="#">Crear Usuarios</a></li>
+                    <li><a href="#">Lista Usuarios</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i><img src="../assets/icons/notas.svg" alt="Imagen para notas"></i>
+                        <span class="link_name">Notas</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Notas</a></li>
+                    <li><a href="#">Crear Notas</a></li>
+                    <li><a href="#">Lista Notas</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="../assets/image/imagenUser.jpg" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Johan Peña</div>
+                        <div class="job">Estudiante</div>
+                    </div>
+                    <a href="../index.html"><i class='bx bx-log-out'></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">NoteBoost - DashBoard</span>
+        </div>
+        <div>
+            <div class="container">
+                <h1>Registro de Estudiantes</h1>
+                <form>
+                    <div class="form-cont">
+                        <div class="form-group">
+                            <label for="codigo">Codigo:</label>
+                            <input type="text" id="codigo" name="codigo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carrera">Materia:</label>
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Selecciona un matria</option>
+                                <option value="informatica">Informática</option>
+                                <option value="administracion">Administración</option>
+                                <option value="contabilidad">Contabilidad</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="carrera">Grupo:</label>
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Selecciona un matria</option>
+                                <option value="informatica">Informática</option>
+                                <option value="administracion">Administración</option>
+                                <option value="contabilidad">Contabilidad</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="carrera">Semestre:</label>
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Selecciona un matria</option>
+                                <option value="informatica">Informática</option>
+                                <option value="administracion">Administración</option>
+                                <option value="contabilidad">Contabilidad</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="carrera">Rol:</label>
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Selecciona un matria</option>
+                                <option value="informatica">Informática</option>
+                                <option value="administracion">Administración</option>
+                                <option value="contabilidad">Contabilidad</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
             </div>
         </div>
-    </div>
-    <div id="main-container">
-        holas todos
-    </div>
+    </section>
     <script>
-        const btn = document.querySelector('#menu-btn');
-        const menu = document.querySelector('#sidemenu');
-        btn.addEventListener('click', e =>{
-            menu.classList.toggle('menu-expanded');
-            menu.classList.toggle('menu-collapsed');
-
-            document.querySelector('body').classList.toggle('body-expanded');
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
         });
     </script>
+    <script src="../js/app.js" type="module"></script>
 </body>
 
 </html>
