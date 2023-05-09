@@ -13,6 +13,7 @@
 
     <!--Mis estilos-->
     <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/index/validarCampos.css">
     <link rel="stylesheet" href="css/global.css">
 
     <title>NoteBoost | Login</title>
@@ -20,18 +21,22 @@
 
 <body>
     <main>
-        <form action="#" method="post" class="contLogin">
-            <h1>Ingesar al sistema</h1>
+        <form action="#" method="post" class="contLogin" id="loginForm">
+            <h1>Ingresar al sistema</h1>
             <div class="group_input">
                 <label for="email">Correo:</label>
-                <input type="email" name="email" placeholder="Ingrese por favor su correo">
+                <input type="email" name="email" id="email" placeholder="Ingrese por favor su correo">
+                <span class="error" id="emailError"></span>
                 <label for="password">Contraseña:</label>
-                <input type="password" name="password" placeholder="Ingrese por favor su contraseña">
+                <input type="password" name="password" id="password" placeholder="Ingrese por favor su contraseña">
+                <span class="error" id="passwordError"></span>
                 <button type="submit" class="btn_ingresar">Ingresar</button>
                 <a href="views/recuperarPassWord.html" class="links">¿Problemas para ingresar?</a>
             </div>
         </form>
+
     </main>
+    <script src="js/login/validaCampos.js"></script>
 </body>
 
 </html>

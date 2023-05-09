@@ -43,7 +43,7 @@ main {
 }
 
 .group_input {
-    margin: 40px auto;
+    margin: 14px auto;
     display: flex;
     flex-direction: column;
     justify-content: center
