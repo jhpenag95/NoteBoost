@@ -18,7 +18,14 @@
         <div class="container">
             <h1>Registro de Estudiantes</h1>
             <form action="#" method="post" enctype="multipart/form-data" id="formEstudiantes">
-
+                <label for="imagen">
+                    <em>Sube tu imagen:</em>
+                    <div class="image-upload">
+                        <input type="file" id="imagen" name="imagen" accept="image/*" onchange="previewImage(event)">
+                        <span></span>
+                        <img id="preview" src="#">
+                    </div>
+                </label>
                 <label>
                     <em>Código:</em>
                     <input type="number" id="codigo" name="codigo" placeholder="Ingrese su código" required>
@@ -42,9 +49,8 @@
                 </label>
                 <label>
                     <em>Contraseña:</em>
-                    <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña"
-                        required>
-                        <span></span>
+                    <input type="password" id="clave" name="clave" placeholder="Ingrese su contraseña" required>
+                    <span></span>
                 </label>
                 <label>
                     <em>Semestre:</em>
@@ -67,17 +73,14 @@
                     <span></span>
                 </label>
 
-                <label>
-                    <em>Imagen:</em>
-                    <input type="file" id="imagen" name="imagen" accept="image/*">
-                </label>
+
 
                 <button type="submit">Crear Estudiante</button>
             </form>
-
         </div>
     </main>
     <script src="../js/crear_estudiante/crearEstudiantes.js"></script>
+    <script src="../js/crear_estudiante/previsualizarImagen.js"></script>
 </body>
 
 </html>
