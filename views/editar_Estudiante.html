@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Datos de Estudiantes</title>
+    <!-- Archivo CSS para el estilo del formulario -->
+    <link rel="stylesheet" href="../css/editar_estudiantes/editarEstudiante.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Editar Datos de Estudiantes</h1>
+        <form action="#" method="post" id="editForm">
+            <label for="codigo">
+                <em>Código:</em>
+                <input type="number" id="codigo" name="codigo" placeholder="Ingrese el código" required>
+            </label>
+
+            <label for="nombre">
+                <em>Nombre:</em>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required>
+            </label>
+
+            <label for="apellido">
+                <em>Apellido:</em>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese el apellido" required>
+            </label>
+
+            <label for="correo">
+                <em>Correo:</em>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese el correo" required>
+            </label>
+
+            <label for="clave">
+                <em>Contraseña:</em>
+                <input type="password" id="clave" name="clave" placeholder="Ingrese la contraseña" required>
+            </label>
+
+            <label for="semestre">
+                <em>Semestre:</em>
+                <select id="semestre" name="semestre" required>
+                    <option value="">Seleccione un semestre</option>
+                    <option value="1">Primer Semestre</option>
+                    <option value="2">Segundo Semestre</option>
+                    <option value="3">Tercer Semestre</option>
+                </select>
+            </label>
+            <label>
+                <em>Grupo:</em>
+                <select id="grupo" name="grupo" required>
+                    <option value="">Seleccione una grupo</option>
+                    <option value="1">Grupo-1</option>
+                    <option value="2">Grupo-2</option>
+                    <option value="2">Grupo-3</option>
+                </select>
+                <span></span>
+            </label>
+            <label for="materia">
+                <em>Materia:</em>
+                <select id="materia" name="materia" required>
+                    <option value="">Seleccione una materia</option>
+                    <option value="1">Materia 1</option>
+                    <option value="2">Materia 2</option>
+                    <option value="3">Materia 3</option>
+                </select>
+            </label>
+
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </div>
+</body>
+
+</html>

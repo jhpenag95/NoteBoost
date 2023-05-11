@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="e">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registar | Temas</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/resgitar_Tema/registrarTema.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Temas</h1>
+        <form action="#" method="post">
+            <label for="materia">Materia:</label>
+            <select id="materia" name="materia" required>
+                <option value="">Seleccione una materia</option>
+                <option value="1">Materia-1</option>
+                <option value="2">Materia-2</option>
+                <option value="3">Materia-3</option>
+            </select>
+
+            <label for="tema">Tema:</label>
+            <input type="text" id="tema" name="tema" placeholder="Ingrese el tema" required>
+
+            <label for="tema">Porcentaje:</label>
+            <input type="number" id="procentaje" name="procentaje" placeholder="Ingrese el procentaje" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" required></textarea>
+
+            <div class="cont-btn">
+                <button type="submit">Registrar Tema</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

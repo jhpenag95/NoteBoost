@@ -1,0 +1,98 @@
+:root {
+    --color-primary: #273746;
+    --color-secondary: #19B5FE;
+    --color-accent: #26C281;
+    --color-highlight: #e18c0b;
+    --color-danger: #F64747;
+    --color-white: #fff;
+    --color-gray: #ddd;
+}
+
+
+body {
+    background-color: var(--color-primary);
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 18px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    display: grid;
+    gap: 5px;
+}
+
+em {
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select {
+    outline: none;
+    border: 1px solid var(--color-primary);
+}
+
+.cont-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cont-btn button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    font-size: 18px;
+    transition: all 1s;
+    width: 200px;
+}
+
+button:hover {
+    background-color: var(--color-highlight);
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 20px;
+    }
+}

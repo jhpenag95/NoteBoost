@@ -136,84 +136,10 @@
             <span class="text">NoteBoost - DashBoard</span>
         </div>
         <div>
-            <div class="container">
-                <h1>Registro de Estudiantes</h1>
-                <form>
-                    <div class="form-cont">
-                        <div class="form-group">
-                            <label for="codigo">Codigo:</label>
-                            <input type="text" id="codigo" name="codigo" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" id="apellido" name="apellido" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="correo">Correo Electrónico:</label>
-                            <input type="email" id="correo" name="correo" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="carrera">Materia:</label>
-                            <select id="carrera" name="carrera" required>
-                                <option value="">Selecciona un matria</option>
-                                <option value="informatica">Informática</option>
-                                <option value="administracion">Administración</option>
-                                <option value="contabilidad">Contabilidad</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="carrera">Grupo:</label>
-                            <select id="carrera" name="carrera" required>
-                                <option value="">Selecciona un matria</option>
-                                <option value="informatica">Informática</option>
-                                <option value="administracion">Administración</option>
-                                <option value="contabilidad">Contabilidad</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="carrera">Semestre:</label>
-                            <select id="carrera" name="carrera" required>
-                                <option value="">Selecciona un matria</option>
-                                <option value="informatica">Informática</option>
-                                <option value="administracion">Administración</option>
-                                <option value="contabilidad">Contabilidad</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="carrera">Rol:</label>
-                            <select id="carrera" name="carrera" required>
-                                <option value="">Selecciona un matria</option>
-                                <option value="informatica">Informática</option>
-                                <option value="administracion">Administración</option>
-                                <option value="contabilidad">Contabilidad</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit">Registrar</button>
-                </form>
-            </div>
         </div>
     </section>
-    <script>
-        let arrow = document.querySelectorAll(".arrow");
-        for (var i = 0; i < arrow.length; i++) {
-            arrow[i].addEventListener("click", (e) => {
-                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-                arrowParent.classList.toggle("showMenu");
-            });
-        }
-        let sidebar = document.querySelector(".sidebar");
-        let sidebarBtn = document.querySelector(".bx-menu");
-        console.log(sidebarBtn);
-        sidebarBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
-    </script>
-    <script src="../js/app.js" type="module"></script>
+    
+    <script src="../js/nav/app.js" type="module"></script>
 </body>
 
 </html>
