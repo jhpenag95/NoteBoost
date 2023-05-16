@@ -1,0 +1,107 @@
+:root {
+    --color-primary: #273746;
+    --color-secondary: #19B5FE;
+    --color-accent: #26C281;
+    --color-highlight: #e18c0b;
+    --color-danger: #F64747;
+    --color-white: #fff;
+    --color-gray: #ddd;
+}
+
+
+.contNotas {
+    align-items: center;
+    background-color: var(--color-white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    padding: 12px;
+    width: 90%;
+}
+
+h1 {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.hr {
+    border: 1px solid var(--color-primary);
+    margin-bottom: 34px;
+    width: 30%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--color-primary);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td[contenteditable="true"] {
+    outline: none;
+}
+
+td[contenteditable="true"]:focus {
+    background-color: lightblue;
+}
+
+
+.cont-btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        min-width: 100px;
+        width: auto;
+    }
+
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+}

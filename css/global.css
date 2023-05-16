@@ -6,3 +6,31 @@
     font-family: 'Lato', sans-serif;
 }
 
+:root {
+    --color-primary: #273746;
+    --color-secondary: #19B5FE;
+    --color-accent: #26C281;
+    --color-highlight: #e18c0b;
+    --color-danger: #F64747;
+    --color-white: #fff;
+    --color-gray: #ddd;
+}
+
+
+body {
+ background-color: var(--color-gray);
+}
+
+/* Estilos para los mensajes de error */
+.invalid {
+    border: solid 1px;
+    box-shadow: 0 0 10px red;
+    outline: none;
+}
+
+span.error {
+    color: red;
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+}

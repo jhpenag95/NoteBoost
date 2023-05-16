@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Notas</title>
+
+    <link rel="stylesheet" href="../css/editar_Nota/editarNota.css">
+    <link rel="stylesheet" href="../css/editar_Nota/validarCampos.css">
+</head>
+
+<body>
+    <main>
+        <form action="#" class="contNotas" method="post">
+            <h1>Editar nosta del estudiantes</h1>
+            <hr class="hr">
+
+            <div class="filter">
+                <label for="semester">
+                    <em>Semestre:</em>
+                    <select id="semester" name="semester">
+                        <option value="">Todos</option>
+                        <option value="1">Semestre 1</option>
+                        <option value="2">Semestre 2</option>
+                        <option value="3">Semestre 3</option>
+                    </select>
+                    <span></span>
+                </label>
+
+                <label for="group">
+                    <em>Grupo:</em>
+                    <select id="group" name="group">
+                        <option value="">Todos</option>
+                        <option value="A">Grupo A</option>
+                        <option value="B">Grupo B</option>
+                        <option value="C">Grupo C</option>
+                    </select>
+                    <span></span>
+                </label>
+
+                <label for="topic">
+                    <em>Tema:</em>
+                    <select id="topic" name="topic">
+                        <option value="">Todos</option>
+                        <option value="1">Tema 1</option>
+                        <option value="2">Tema 2</option>
+                        <option value="3">Tema 3</option>
+                    </select>
+                    <span></span>
+                </label>
+
+                <label for="search" class="search">
+                    <em>Buscar:</em>
+                    <input type="text" id="search" name="search" placeholder="Buscar estudiante...">
+                    <img src="../assets/icons/buscar.svg" alt="buscar estudiante">
+                </label>
+            </div>
+
+            <table id="students-table">
+                <thead>
+                    <tr>
+                        <th>Código de Estudiante</th>
+                        <th>Nombre del Estudiante</th>
+                        <th>Grupo</th>
+                        <th>Semestre</th>
+                        <th>Nota del Tema 1</th>
+                        <th>Nota del Tema 2</th>
+                        <th>Nota del Tema 3</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Estudiante 1</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td>Editar</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Estudiante 2</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td>Editar</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Estudiante 3</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td>Editar</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Estudiante 3</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td>Editar</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Estudiante 3</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td>Editar</td>
+                    </tr>
+                    <!-- Agrega más filas de estudiantes aquí -->
+                </tbody>
+            </table>
+            <div class="cont-btn">
+                <button type="submit">Guardar cambios</button>
+            </div>
+        </form>
+
+        <script src="../js/editar_Nota/editarNota.js"></script>
+    </main>
+</body>
+
+</html>

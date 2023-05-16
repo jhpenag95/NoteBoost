@@ -14,22 +14,34 @@
     <div class="container">
         <h1>Registro de Temas</h1>
         <form action="#" method="post">
-            <label for="materia">Materia:</label>
-            <select id="materia" name="materia" required>
-                <option value="">Seleccione una materia</option>
-                <option value="1">Materia-1</option>
-                <option value="2">Materia-2</option>
-                <option value="3">Materia-3</option>
-            </select>
+            <label for="materia">
+                <em>Materia:</em>
+                <select id="materia" name="materia" class="select" required>
+                    <option value="">Seleccione una materia</option>
+                    <option value="1">Materia-1</option>
+                    <option value="2">Materia-2</option>
+                    <option value="3">Materia-3</option>
+                </select>
+                <span></span>
+            </label>
 
-            <label for="tema">Tema:</label>
-            <input type="text" id="tema" name="tema" placeholder="Ingrese el tema" required>
+            <label for="tema">
+                <em>Tema:</em>
+                <input type="text" id="tema" name="tema" placeholder="Ingrese el tema" required>
+                <span></span>
+            </label>
 
-            <label for="tema">Porcentaje:</label>
-            <input type="number" id="procentaje" name="procentaje" placeholder="Ingrese el procentaje" required>
+            <label for="tema">
+                <em>Porcentaje:</em>
+                <input type="number" id="procentaje" name="procentaje" placeholder="Ingrese el procentaje" required>
+                <span></span>
+            </label>
 
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" required></textarea>
+            <label for="descripcion">
+                <em></em>Descripción:
+                <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción" required></textarea>
+                <span></span>
+            </label>
 
             <div class="cont-btn">
                 <button type="submit">Registrar Tema</button>
@@ -37,6 +49,7 @@
         </form>
     </div>
 
+    <script src="../js/resgitro_tema/resgitrotema.js"></script>
 </body>
 
 </html>

@@ -8,9 +8,6 @@
     --color-gray: #ddd;
 }
 
-body {
-    background-color: var(--color-primary);
-}
 
 .container {
     max-width: 500px;

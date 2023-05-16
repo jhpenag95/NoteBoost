@@ -8,9 +8,6 @@
     --color-gray: #ddd;
 }
 
-body {
-    background-color: var(--color-primary);
-}
 
 .container {
     max-width: 600px;
@@ -54,21 +51,18 @@ label em {
 }
 
 
-input[type="text"],
-textarea,
-input[type="number"] {
+.input-items {
     padding: 10px;
     border: 1px solid var(--color-gray);
     border-radius: 4px;
     width: 100%;
 }
 
-input[type="text"]:focus,
-textarea:focus,
-input[type="number"]:focus {
+.input-items:focus {
     outline: none;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-highlight);
 }
+
 
 textarea {
     resize: vertical;

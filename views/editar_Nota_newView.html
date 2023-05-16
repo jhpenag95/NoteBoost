@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edita |Nota</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/editar_Nota/editar_Nota_newView.css">
+    <link rel="stylesheet" href="../css/editar_Nota/validarCampos.css">
+</head>
+
+<body>
+    <main class="container">
+        <form action="#" method="post">
+            <h1>Editar Nota del Estudiante</h1>
+            <div class="form-group">
+                <label for="nombre">
+                    <em>Nombre del Estudiante:</em> 
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del estudiante" disabled>
+                    <span></span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="nota">
+                    <em>Nota:</em> 
+                    <input type="number" id="nota" name="nota" placeholder="Ingrese la nueva nota" required>
+                    <span></span>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="nota">
+                    <em>Porcentaje:</em> 
+                    <input type="number" id="porcentaje" name="porcentaje" placeholder="Ingrese el nuevo porcentaje" required>
+                    <span></span>
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../js/editar_Nota/editar_Nota_newView.js"></script>
+</body>
+
+</html>

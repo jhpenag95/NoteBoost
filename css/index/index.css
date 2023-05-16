@@ -53,7 +53,8 @@ main {
     border: 1px solid var(--color-gray);
     border-radius: 6px;
     padding: 12px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
+    width: 100%;
 }
 
 .group_input input:focus {
@@ -67,7 +68,16 @@ main {
     text-align: left;
 }
 
-.group_input .btn_ingresar {
+.nameLabel{
+    margin-bottom: 10px;
+}
+
+.btn-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_ingresar {
     background: var(--color-primary);
     color: var(--color-white);
     border: none;
@@ -78,7 +88,7 @@ main {
     width: 200px;
 }
 
-.group_input .btn_ingresar:hover{
+.btn_ingresar:hover{
     background: var(--color-highlight);
 }
 

@@ -1,7 +1,8 @@
 /* Estilos para los mensajes de error */
 .invalid {
-    border: solid 1px ;
+    border: solid 1px;
     box-shadow: 0 0 10px red;
+    outline: none;
 }
 
 span.error {

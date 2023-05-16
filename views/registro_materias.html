@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registar | Materia</title>
 
-    <link rel="stylesheet" href="../css/registro_Materias/registroMaterias.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/registro_Materias/registroMaterias.css">
 </head>
 
 <body>
@@ -17,26 +17,30 @@
             <h1>Registro de Materia</h1>
             <label>
                 <em>Código de Materia:</em>
-                <input type="text" name="codigo" placeholder="Ingrese el código de la materia" required>
+                <input type="text" class="input-items" name="codigo" id="codigo" placeholder="Ingrese el código de la materia" required>
+                <span></span>
             </label>
             <label>
                 <em>Nombre de Materia:</em>
-                <input type="text" name="nombre" placeholder="Ingrese el nombre de la materia" required>
+                <input type="text" class="input-items" name="nombre" id="nombre" placeholder="Ingrese el nombre de la materia" required>
+                <span></span>
             </label>
             <label>
                 <em>Descripción:</em>
-                <textarea name="descripcion" placeholder="Ingrese la descripción de la materia" required></textarea>
+                <textarea class="input-items" name="descripcion" id="descripcion" placeholder="Ingrese la descripción de la materia" required></textarea>
+                <span></span>
             </label>
             <label>
                 <em>Créditos:</em>
-                <input type="number" name="creditos" placeholder="Ingrese el número de créditos" required>
+                <input type="number" class="input-items" name="creditos" id="creditos" placeholder="Ingrese el número de créditos" required>
+                <span></span>
             </label>
             <div class="cont-btn">
                 <button type="submit">Registrar Materia</button>
             </div>
         </form>
     </div>
-
+    <script src="../js/registro_materias/validarMaterias.js"></script>
 </body>
 
 </html>

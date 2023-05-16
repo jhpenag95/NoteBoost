@@ -8,22 +8,31 @@
     <title>Editar | Materia</title>
 
     <!-- Archivo CSS para el estilo del formulario -->
-    <link rel="stylesheet" href="../css/editar_Materia/editarMateria.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/editar_Materia/editarMateria.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Editar Materia</h1>
         <form>
-            <label for="nombre">Nombre de la Materia:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre de la materia" required>
+            <h1>Editar Materia</h1>
+            <label for="nombre">
+                <em>Nombre de la Materia:</em> 
+                <input class="input-items" type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre de la materia" required>
+                <span></span>
+            </label>
 
-            <label for="codigo">Código de la Materia:</label>
-            <input type="text" id="codigo" name="codigo" placeholder="Ingrese el código de la materia" required>
+            <label for="codigo">
+                <em>Código de la Materia:</em> 
+                <input class="input-items" type="text" id="codigo" name="codigo" placeholder="Ingrese el código de la materia" required>
+                <span></span>
+            </label>
 
-            <label for="creditos">Créditos:</label>
-            <input type="number" id="creditos" name="creditos" placeholder="Ingrese el número de créditos" required>
+            <label for="creditos">
+                <em>Créditos:</em> 
+                <input class="input-items" type="number" id="creditos" name="creditos" placeholder="Ingrese el número de créditos" required>
+                <span></span>
+            </label>
 
 
             <div class="cont-btn">
@@ -31,7 +40,7 @@
             </div>
         </form>
     </div>
-
+ <script src="../js/editar_Materia/validarCampos.js"></script>
 </body>
 
 </html>
