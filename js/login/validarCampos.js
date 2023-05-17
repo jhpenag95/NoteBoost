@@ -1,5 +1,6 @@
 const correoFile = document.getElementById('email');
 const passwordFile = document.getElementById('password');
+const userTypeFile = document.getElementById('userType');
 
 // Funciones para errores
 const setError = (message, field, esError = true) => {
@@ -44,21 +45,11 @@ const validateEmailFormat = e => {
 
 correoFile.addEventListener("blur", (e) => validateEmptyField("Ingresa por favor tu correo", e));
 passwordFile.addEventListener("blur", (e) => validateEmptyField("Ingresa por favor tu contraseña", e));
+userTypeFile.addEventListener("blur", (e) => validateEmptyField("Por favor, selecciona el tipo de usuario", e));
 
 
 
 // Cada vez que se escribe algo en el campo de correo, se valida el formato
 correoFile.addEventListener("input", validateEmailFormat);
 
-// Validando el campo de tipo file
-imageFile.addEventListener("change", (e) => {
-    const field = e.target;
-    const fileExt = e.target.files[0].name.split(".").pop().toLowerCase();
-    const allowedExt = ["jpg", "jpeg", "png", "gif"];
 
-    if (!allowedExt.includes(fileExt)) {
-        setError("Error, formato no válido", field);
-    } else {
-        setError("", field, false);
-    }
-});

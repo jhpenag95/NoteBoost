@@ -30,7 +30,7 @@ main {
     background: var(--color-white);
     box-shadow: rgba(255, 255, 255, 1.35) 0px 5px 15px;
     border-radius: 6px;
-    height: 500px;
+    height: auto;
     padding: 16px;
     text-align: center;
     width: 460px;
@@ -68,8 +68,25 @@ main {
     text-align: left;
 }
 
-.nameLabel{
+.nameLabel {
     margin-bottom: 10px;
+}
+
+.userType {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectUser {
+    border-radius: 6px;
+    border: 1px solid var(--color-gray);
+    padding: 12px;
+    width: 200px;
+}
+
+.selectUser:focus {
+    outline: none;
+    border: 2px solid var(--color-highlight);
 }
 
 .btn-cont {
@@ -88,7 +105,7 @@ main {
     width: 200px;
 }
 
-.btn_ingresar:hover{
+.btn_ingresar:hover {
     background: var(--color-highlight);
 }
 
@@ -103,9 +120,9 @@ main {
 /**=====================Media Queryes========================**/
 
 @media screen and (max-width: 768px) {
-    .contLogin{
-        height: 480px;
-        width: 400px;
+    .contLogin {
+        height: auto;
+        width: 280px;
     }
 
     .contLogin h1 {
@@ -119,8 +136,8 @@ main {
 }
 
 @media screen and (max-width: 400px) {
-    .contLogin{
-        height: 420px;
+    .contLogin {
+        height: auto;
         width: 280px;
     }
 
@@ -130,7 +147,7 @@ main {
     }
 
     .group_input .btn_ingresar {
-       
+
         margin: 12px auto;
     }
 }
