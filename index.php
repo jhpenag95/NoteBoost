@@ -1,11 +1,13 @@
 <?php
-
+session_start();
+if (!empty($_SESSION['active'])) {
+    header('location: views/dashboard.php'); // Redirige al dashboard si ya hay una sesión activa
+}
 require_once 'conexion.php';
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -24,6 +26,8 @@ require_once 'conexion.php';
     <link rel="stylesheet" href="css/global.css">
 
     <title>NoteBoost | Login</title>
+
+    <?php require 'views/styles.php'; ?>
 </head>
 
 <body>
@@ -43,12 +47,12 @@ require_once 'conexion.php';
                 </label>
                 <label class="userType">
                     <?php
-                    $query_rol = $conexion->query("SELECT * FROM roles WHERE id_rol <> 1");
+                    $query_rol = $conexion->query("SELECT * FROM roles WHERE id_rol IN (2, 3)"); // Solo selecciona los roles 2 y 3
                     $result_consulta = $query_rol->rowCount();
                     ?>
                     <em>Tipo de usuario:</em>
                     <select id="userType" name="userType" class="selectUser" required>
-                        <option value="">Seleccione un semestre</option>
+                        <option value="">Seleccione un tipo de usuario</option>
                         <?php
                         if ($result_consulta > 0) {
                             while ($rol = $query_rol->fetch(PDO::FETCH_ASSOC)) {
@@ -61,11 +65,19 @@ require_once 'conexion.php';
                     </select>
                     <span></span>
                 </label>
-
             </div>
             <div class="btn-cont">
-                <button type="submit" class="btn_ingresar" onclick="valida(event)">Ingresar</button>
+                <button type="submit" name="validar" class="btn_ingresar" onclick="valida(event)">Ingresar</button>
                 <a href="views/recuperarPassWord.html" class="links">¿Problemas para ingresar?</a>
+            </div>
+            <!-- Alertas -->
+            <div class="alertFormBuscar">
+                <?php if (isset($_SESSION['noExist'])) : ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>¡Error!</strong> <?php echo $_SESSION['noExist']; ?>
+                    </div>
+                    <?php unset($_SESSION['noExist']); ?>
+                <?php endif; ?>
             </div>
         </form>
     </main>
